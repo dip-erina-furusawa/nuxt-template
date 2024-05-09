@@ -7,7 +7,7 @@ const props = defineProps({
 });
 </script>
 <template>
-  <Button>
+  <Button class="bg-blue-500">
     {{ label }}
   </Button>
 </template>
