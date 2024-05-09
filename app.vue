@@ -1,3 +1,3 @@
 <template>
-  <CommonButton label="Hello World!" />
+  <CommonBasicButton label="Hello World!" />
 </template>
