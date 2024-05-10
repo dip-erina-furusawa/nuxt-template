@@ -14,6 +14,8 @@
     "prepare": "husky",
     "lint:es": "eslint .",
     "lint:es:fix": "eslint . --fix",
+    "lint:style": "stylelint './**/*.css'",
+    "lint:style:fix": "stylelint --fix './**/*.css'",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,vue,json}'"
   },
   "dependencies": {
@@ -32,6 +34,7 @@
   },
   "devDependencies": {
     "@nuxtjs/storybook": "7.0.2",
+    "@nuxtjs/stylelint-module": "^5.2.0",
     "@nuxtjs/tailwindcss": "^6.12.0",
     "@storybook-vue/nuxt": "0.2.6",
     "@storybook/addon-essentials": "8.0.8",
@@ -48,6 +51,7 @@
     "husky": "^9.0.11",
     "prettier": "3.2.5",
     "storybook": "8.0.8",
+    "stylelint": "^16.5.0",
     "typescript": "^5.4.5",
     "vitest": "^1.6.0",
     "vue-tsc": "^1.8.27"
