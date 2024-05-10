@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare",
     "storybook": "storybook dev --port 6006",
     "build-storybook": "storybook build",
-    "test": "vitest",
+    "test": "vitest --watch=false",
     "prepare": "husky",
     "lint": "npm run lint:es:fix && npm run lint:style:fix",
     "lint:es": "eslint .",
