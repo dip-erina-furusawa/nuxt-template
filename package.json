@@ -12,11 +12,22 @@
     "build-storybook": "storybook build",
     "test": "vitest",
     "prepare": "husky",
+    "lint": "npm run lint:es:fix && npm run lint:style:fix",
     "lint:es": "eslint .",
     "lint:es:fix": "eslint . --fix",
     "lint:style": "stylelint './**/*.css'",
     "lint:style:fix": "stylelint --fix './**/*.css'",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,vue,json}'"
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,vue,json}'",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,vue}": [
+      "eslint",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@nuxt/eslint": "^0.3.10",
@@ -49,6 +60,7 @@
     "@vue/test-utils": "^2.4.6",
     "happy-dom": "^14.10.1",
     "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "3.2.5",
     "storybook": "8.0.8",
     "stylelint": "^16.5.0",
