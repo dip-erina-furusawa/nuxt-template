@@ -1,28 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: [
-    '@nuxt/eslint',
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/storybook',
-    'shadcn-nuxt',
-    [
-      '@nuxtjs/stylelint-module',
-      {
-        extends: [
-          'stylelint-config-recommended',
-          'stylelint-config-standard',
-          'stylelint-config-recommended-vue',
-        ],
-        overrides: [
-          {
-            files: ['**/*.vue'],
-            customSyntax: 'postcss-html',
-          },
-        ],
-      },
-    ],
-  ],
+  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxtjs/storybook', 'shadcn-nuxt'],
   typescript: {
     typeCheck: true,
   },
