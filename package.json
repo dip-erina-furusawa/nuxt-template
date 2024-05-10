@@ -12,8 +12,9 @@
     "build-storybook": "storybook build",
     "test": "vitest",
     "prepare": "husky",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:es": "eslint .",
+    "lint:es:fix": "eslint . --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,vue,json}'"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.3.10",

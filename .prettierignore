@@ -1,2 +1,8 @@
 # Ignore artifacts:
 public
+server
+.husky
+.nuxt
+.output
+./components/common/ui
+.gitignore
